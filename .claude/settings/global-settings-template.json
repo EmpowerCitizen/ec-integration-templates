@@ -1,0 +1,31 @@
+{
+  "env": {},
+  "permissions": {
+    "allow": [
+      "*"
+    ],
+    "deny": [
+      "Bash(sudo shutdown:*)",
+      "Bash(sudo reboot:*)",
+      "Bash(rm -rf /:*)",
+      "Bash(rm -rf /.*)",
+      "Bash(format:*)",
+      "Bash(fdisk:*)",
+      "Bash(dd if=:*)",
+      "Bash(mkfs:*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/ec-xps/.claude/hooks/no_lying_policy_validator.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -10,27 +10,35 @@ This repository provides standardized templates, configurations, and patterns us
 
 ```
 ec-integration-templates/
-├── claude-configs/              # Claude Code configuration templates
-│   ├── project-templates/       # CLAUDE.md templates by project type
-│   ├── integration-methods/     # Integration method templates
-│   └── commands/               # Custom slash command templates
-├── docker/                     # Docker configuration templates
-│   ├── compose/                # Docker Compose templates
-│   ├── images/                 # Custom Docker images
-│   └── configs/                # Container configuration templates
-├── ci-cd/                      # Continuous Integration templates
-│   ├── github-actions/         # GitHub Actions workflows
-│   ├── testing/                # Testing configuration templates
-│   └── deployment/             # Deployment patterns
-├── project-scaffolding/        # Project initialization templates
-│   ├── next-js/                # Next.js project templates
-│   ├── react-vite/             # React + Vite templates
-│   ├── node-api/               # Node.js API templates
-│   └── full-stack/             # Full-stack application templates
-└── documentation/              # Documentation templates
-    ├── readme-templates/       # README.md templates
-    ├── api-docs/               # API documentation templates
-    └── technical-specs/        # Technical specification templates
+├── .claude/                    # Shared Claude configurations
+│   ├── commands/               # Reusable Claude slash commands
+│   ├── hooks/                  # Shared hooks (NO LYING POLICY, etc.)
+│   ├── integration-methods/    # Integration documentation templates
+│   └── settings/               # Claude settings file templates
+├── shared-scripts/             # Reusable automation scripts
+│   ├── setup-new-project.sh    # Project initialization script
+│   └── [other utilities]       # Additional shared utilities
+├── claude-configs/             # Claude Code configuration templates
+│   ├── project-templates/      # CLAUDE.md templates by project type
+│   ├── integration-methods/    # Integration method templates
+│   └── commands/              # Custom slash command templates
+├── docker/                    # Docker configuration templates
+│   ├── compose/               # Docker Compose templates
+│   ├── images/                # Custom Docker images
+│   └── configs/               # Container configuration templates
+├── ci-cd/                     # Continuous Integration templates
+│   ├── github-actions/        # GitHub Actions workflows
+│   ├── testing/               # Testing configuration templates
+│   └── deployment/            # Deployment patterns
+├── project-scaffolding/       # Project initialization templates
+│   ├── next-js/               # Next.js project templates
+│   ├── react-vite/            # React + Vite templates
+│   ├── node-api/              # Node.js API templates
+│   └── full-stack/            # Full-stack application templates
+└── documentation/             # Documentation templates
+    ├── readme-templates/      # README.md templates
+    ├── api-docs/              # API documentation templates
+    └── technical-specs/       # Technical specification templates
 ```
 
 ## Template Categories
